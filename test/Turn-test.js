@@ -6,8 +6,8 @@ const Card = require('../src/Card');
 
 describe('Turn', () => {
     let turn1;
-    let card1;
     let turn2;
+    let card1;
     beforeEach(() => {
         card1 = new Card(1, 'What allows you to define a set of related information using key-value pairs?', ['object', 'array', 'function'], 'object');
         turn1 = new Turn('object', card1);
@@ -72,4 +72,4 @@ describe('Turn', () => {
         expect(turn2.giveFeedback()).to.equal('incorrect!');
     });
 
-})
+});
