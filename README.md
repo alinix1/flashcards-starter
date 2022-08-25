@@ -9,6 +9,9 @@
 ![flash cards GIF](https://user-images.githubusercontent.com/28677929/186770874-2de448dd-8d81-41a6-9d53-74bf487e13a2.gif)
 
 
+<img width="1040" alt="Screen Shot 2022-08-25 at 5 10 42 PM" src="https://user-images.githubusercontent.com/28677929/186784404-931cb7a8-d25a-498e-9e3d-ebb845585314.png">
+
+
 ### Technologies Used 
 
 - Javascript 
@@ -29,3 +32,7 @@ Once you have cloned the repo, change into the directory `cd` and install the li
 - Running node index.js from the root of your project should result in the following message being displayed in your terminal:
 
 `Your project is running...`
+
+## Contributors 
+
+- This is a game built by [Ali Nix](https://github.com/alinix1), a Front End Engineering student in Mod 2 at the [Turing School of Software and Design](https://turing.edu/) 
