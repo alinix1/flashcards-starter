@@ -25,8 +25,14 @@ class Round {
     calculatePercentCorrect() {
         return Math.round(((this.turns - this.incorrectGuesses.length)/this.turns) * 100);
 
-    };
-
+    }
+    endRound() {
+        let message = `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
+        console.timeLog('Your game run time: ');
+        console.log(message);
+        return message;
+    }
 }
+
 
 module.exports = Round;
