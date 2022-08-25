@@ -20,6 +20,11 @@ describe('Card', () => {
     expect(card.id).to.equal(1);
   });
 
+  it('should be an id that is a number', () => {
+    const card = new Card(1, 'What allows you to define a set of related information using key-value pairs?', ['object', 'array', 'function'], 'object');
+    expect(card.id).to.be.finite;
+  });
+
   it('should store a question', () => {
     const card = new Card(1, 'What allows you to define a set of related information using key-value pairs?', ['object', 'array', 'function'], 'object');
     expect(card.question).to.equal('What allows you to define a set of related information using key-value pairs?');
