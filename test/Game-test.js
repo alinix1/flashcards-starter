@@ -20,12 +20,16 @@ describe('Game', () => {
         expect(game).to.be.an.instanceof(Game);
     });
 
-    // it('should keep track of the round', () => {
-    //     expect(game.currentRound).to.be.an.instanceof(Round);
-    // });
+    it('should keep track of the round', () => {
+        game.start();
 
-    // it('should create cards', () => {
-    //     expect(game.currentRound.deck.cards[0]).to.be.an.instanceof(Card);
-    // });
+        expect(game.currentRound).to.be.an.instanceof(Round);
+    });
+
+    it('should create cards', () => {
+        game.start();
+        
+        expect(game.currentRound.deck.cards[0]).to.be.an.instanceof(Card);
+    });
     
 });
