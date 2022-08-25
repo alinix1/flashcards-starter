@@ -30,14 +30,17 @@ describe('Round', () => {
     });
 
     it('should return the current card', () => {
-        expect(round.returnCurrentCard()).to.be.a('object')
-    })
+        expect(round.returnCurrentCard()).to.be.a('object');
+    });
 
     it('should make the first card in the deck the current card by default', () => {
         expect(round.currentCard).to.equal(card1);
     });
 
     it('should take a turn', () => {
+        turn = round.takeTurn('object');
+
+        expect(round.turns).to.equal(1);
     });
 
     it('should evaluate guesses and give correct feedback', () => {
@@ -62,4 +65,16 @@ describe('Round', () => {
 
         expect(round.calculatePercentCorrect()).to.equal(67);
     });
+
+    it('should end the round', () => {
+        round.takeTurn('object');
+        round.takeTurn('array');
+        round.takeTurn('accessor method');
+
+        round.calculatePercentCorrect();
+
+        expect(round.calculatePercentCorrect()).to.equal(67);
+        expect(round.endRound()).to.equal('** Round over! ** You answered 67% of the questions correctly!');
+    });
+
 });
