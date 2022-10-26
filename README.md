@@ -1,7 +1,7 @@
 
 # Flash Cards 🃏
 
-## you will write a program to simulate a set of flash cards through the command line!  A user will be able to see the questions, take guesses, and see a final score at the end of the round.
+## you will write a program to simulate a set of flash cards through the command line interface (CLI)!  A user will be able to see the questions, take guesses, and see a final score at the end of the round.
 
 
 ### Check out the game in action!
@@ -20,8 +20,6 @@
   <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" title="Git" alt="Git" width="100" height="30">
 </p>
 
-- Terminal 
-- Mocha/Chai 
 
 ## Install and Setup 
 
